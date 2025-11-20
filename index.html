@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Suresh Dhami — Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Suresh Dhami</h1>
+
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- HERO -->
+    <section id="hero" class="card hero">
+      <h2>Hi — I'm Suresh</h2>
+      <p class="muted">Bachelor student interested in web development, data, and simple clean design.</p>
+      <p>I completed my +2 from Kathmandu World School and I am currently studying my Bachelor at Herald College Kathmandu.</p>
+      <p><a class="btn" href="#projects">See my projects</a></p>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="card">
+      <h3>About Me</h3>
+      <p>I’m a bachelor-level student learning programming and web development. I enjoy making small projects and improving my practical skills. I prefer simple and minimal UI design.</p>
+      <ul class="small-list">
+        <li>🔸 Skills: HTML, CSS, Python, Git</li>
+        <li>🔸 Interests: Web development, automation, data</li>
+        <li>🔸 Education: BSc (Hons) Computing — Herald College Kathmandu</li>
+      </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="card">
+      <h3>Projects</h3>
+
+      <article class="project">
+        <h4>Weather App</h4>
+        <p>A simple weather app that shows temperature and conditions of any city.</p>
+      </article>
+
+      <article class="project">
+        <h4>Photo Project</h4>
+        <p>A simple project where I used HTML/CSS to display and organize images.</p>
+        <!-- Replace with your actual image -->
+        <img src="9862.jpg"style="width:100%; max-width:400px; border-radius:6px; margin-top:10px;">
+      </article>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="card">
+      <h3>Contact</h3>
+      <p class="muted small">You can email me at:</p>
+      <p><a href="mailto:phantomg927@gmail.com">phantomg927@gmail.com</a></p>
+
+      <form class="contact-form" action="#" method="post" onsubmit="alert('Form not configured — email instead!'); return false;">
+        <label>
+          <span class="label-text">Name</span>
+          <input type="text" name="name" placeholder="Your name" required>
+        </label>
+
+        <label>
+          <span class="label-text">Email</span>
+          <input type="email" name="email" placeholder="you@example.com" required>
+        </label>
+
+        <label>
+          <span class="label-text">Message</span>
+          <textarea name="message" rows="4" placeholder="Short message"></textarea>
+        </label>
+
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Suresh Dhami — Built using simple HTML & CSS</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
